@@ -17,7 +17,7 @@ from read_data import ChestXrayDataSet
 from sklearn.metrics import roc_auc_score
 
 
-CKPT_PATH = 'model.pth.tar'
+CKPT_PATH = 'model.pth'
 N_CLASSES = 14
 CLASS_NAMES = [ 'Atelectasis', 'Cardiomegaly', 'Effusion', 'Infiltration', 'Mass', 'Nodule', 'Pneumonia',
                 'Pneumothorax', 'Consolidation', 'Edema', 'Emphysema', 'Fibrosis', 'Pleural_Thickening', 'Hernia']
