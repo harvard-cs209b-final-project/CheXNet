@@ -7,6 +7,7 @@ This is a Python3 (Pytorch) reimplementation of [CheXNet](https://stanfordmlgrou
 ## Dataset
 
 Refer to https://github.com/harvard-cs209b-final-project/Project for data download and extract.
+Refer to variable `DATA_DIR` in `model.py` for where to put the Chest X-Ray images.
 
 ## Prerequisites
 
