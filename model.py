@@ -15,6 +15,7 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 from read_data import ChestXrayDataSet
 from sklearn.metrics import roc_auc_score
+from tqdm import tqdm
 
 
 CKPT_PATH = 'model.pth'
@@ -68,7 +69,7 @@ def main():
     model.eval()
 
     with torch.no_grad():
-        for i, (inp, target) in enumerate(test_loader):
+        for i, (inp, target) in enumerate(tqdm(test_loader)):
             target = target.cuda()
             gt = torch.cat((gt, target), 0)
             bs, n_crops, c, h, w = inp.size()
